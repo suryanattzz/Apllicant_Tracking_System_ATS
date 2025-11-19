@@ -1,9 +1,10 @@
-environment3.11/
-
-
-run_command.txt
+# Virtual environments
+myenv3.10/
 
 # Ignore Python cache
 __pycache__/
 *.pyc
 *.pyo
+
+# Text or temp files
+run_command.txt

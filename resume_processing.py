@@ -6,7 +6,7 @@ from pdfminer3.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer3.converter import TextConverter
 from pyresparer.resume_parser import ResumeParser
 
-# Try pulling courses/keywords from your existing module
+
 try:
     from Courses import (
         ds_course,
@@ -54,7 +54,6 @@ def show_pdf_iframe(file_path: str) -> str:
 def detect_candidate_level(extracted: dict, resume_text: str):
     pages = (extracted or {}).get('no_of_pages') or 0
     text = resume_text or ''
-    # Keep your original heuristics but simplified
     if pages < 1:
         return "NA", "You are at Fresher level!"
 
@@ -121,7 +120,7 @@ def score_resume(resume_text: str):
 
     score = 0
     tips = []
-    progress = []  # list of dicts for UI progress bar if desired
+    progress = []
 
     for ok, label, pts in checks:
         if ok:

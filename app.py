@@ -54,19 +54,14 @@ def analyze():
 
     resume_text = pdf_reader(save_path)
 
-    # Candidate level
     cand_level, level_msg = detect_candidate_level(extracted, resume_text)
 
-    # Field + skill recommendations
     reco = recommend_field_and_skills(extracted)
 
-    # Scoring + tips
     score, tips, progress = score_resume(resume_text)
 
-    # Inline PDF preview
     pdf_iframe = Markup(show_pdf_iframe(save_path))
 
-    # Persist to DB
     now = datetime.now()
     timestamp = now.strftime("%Y-%m-%d_%H:%M:%S")
 
@@ -77,7 +72,6 @@ def analyze():
     dev_user = os.getenv('USER') or os.getenv('USERNAME') or 'server'
     os_name_ver = f"{os.name}"
 
-    # Optional city/state/country via ip geocoder happens inside db layer for simplicity
     db = get_db()
     cur = db.cursor()
 

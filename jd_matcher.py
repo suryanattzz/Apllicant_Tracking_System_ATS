@@ -24,8 +24,7 @@ def extract_text_from_pdf(pdf_path):
 
 @jd_blueprint.route("/", methods=["GET", "POST"])
 def jd_match_page():
-    return render_template("jd_index.html")   # new template for JD matching
-
+    return render_template("jd_index.html")
 
 @jd_blueprint.route("/results", methods=["POST"])
 def jd_results():
