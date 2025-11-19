@@ -1,1 +1,1 @@
-# Apllicant_Tracking_System-ATS-
+# Apllicant_Tracking_System
