@@ -1,9 +1,10 @@
 # 📌 Applicant Tracking System (ATS)
 
-![Python](https://img.shields.io/badge/python-3.11-blue.svg)
-![Flask](https://img.shields.io/badge/flask-2.3-green.svg)
-![MySQL](https://img.shields.io/badge/mysql-database-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org)
+[![Flask](https://img.shields.io/badge/flask-2.3-green.svg)](https://flask.palletsprojects.com)
+[![MySQL](https://img.shields.io/badge/mysql-database-orange.svg)](https://www.mysql.com)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 
 A Smart **Applicant Tracking System** (ATS) built using **Python, Flask, SpaCy, and MySQL**.
 It helps HRs & recruiters analyze resumes, extract key details, and shortlist candidates efficiently — saving time and effort in the hiring process.
