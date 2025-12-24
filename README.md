@@ -69,8 +69,8 @@ pip install -r requirements.txt
 If not available, install key packages manually:
 
 ```bash
-pip install flask spacy mysql-connector-python python-dotenv
-python -m spacy download en_core_web_trf
+pip install mysql-connector-python python-dotenv
+python -m spacy download en_core_web_trf-3.7.0
 ```
 
 ### 4. Configure Environment Variables
